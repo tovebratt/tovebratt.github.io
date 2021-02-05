@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+// ------------------------------------------------------------------------
+// ------------------------------------ STARTPAGE -------------------------
+// ------------------------------------------------------------------------
+
+body {
+  text-align: left;
+  background-color: white;
+}
+p {
+  padding-bottom: 20px;
+  text-align: left;
+}
+header {
+  width: 80%;
+  max-width: 700px;
+  p {
+  text-align: center;
+  font-weight: 500;
+  }
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 0.9rem;
+}
+.start {
+  height: 100%;
+  background: linear-gradient(175deg, #EAE5DC 0%, #EAE5DC 26%, transparent 26%);
+  }
+.start-tove {
+  text-align: center;
+  p {
+    max-width: 130px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 700;
+  }
+}
+.start-container {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.start-tove, .start-portfolio, .start-resume, .start-contact {
+  width: 20%;
+  margin: auto;
+}
+.start-contact {
+  padding-bottom: 120px;
+}
+
+// ------------------------------------------------------------------------
+// ------------------------------------ PORTFOLIO -------------------------
+// ------------------------------------------------------------------------
+
+.portfolio {
+  background-color: transparent;
+  margin: 80px 50px 50px 50px;
+}
+.portfolio-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  margin: 0px auto;
+  padding: 0px;
+  overflow: hidden;
+  max-width: 100%;
+  gap: 40px;
+  position: relative;
+}
+.portfolio-item1 {
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+}
+.portfolio-item2 {
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+}
+.portfolio-item3 {
+  grid-area: 1 / 3 / 2 / 4;
+  position: relative;
+}
+.portfolio-item4 {
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+}
+.portfolio-item5 {
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+}
+.portfolio-item6 {
+  grid-area: 2 / 3 / 3 / 4;
+  position: relative;
+}
+.portfolio-item7 {
+  grid-area: 3 / 1 / 4 / 2;
+  position: relative;
+}
+.portfolio-item8 {
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+}
+.portfolio-item9 {
+  grid-area: 3 / 3 / 4 / 4;
+  position: relative;
+}
+.overlay {
+  background-color: #EAE5DC;
+}
+.popover:hover .overlay {
+  opacity: 0.9;
+  bottom: 0;
+}
+.text {
+  color: rgb(15, 15, 15);
+  font-size: 0.8rem;
+  span {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  p {
+    padding-top: 20px;
+  }
+}
+
+// ------------------------------------------------------------------------
+// ------------------------------ RESUME & SKILLS -------------------------
+// ------------------------------------------------------------------------
+
+.resume {
+  background-color: #EAE5DC;
+}
+.resume-container {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.resume-resume, .resume-education, .resume-skills, .resume-key {
+  width: 40%;
+  margin: 0 auto;
+}
+.resume-education {
+  order: 3;
+}
+.resume-key {
+  order: 4;
+}
+table {
+  margin: 0;
+  padding: 0px;
+  position: relative;
+  left: -10px;
+}
+
+// ------------------------------------------------------------------------
+// -------------------------------- FOOTER --------------------------------
+// ------------------------------------------------------------------------
+
+footer {
+  bottom: 30px;
+}
